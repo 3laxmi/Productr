@@ -1,0 +1,51 @@
+.delete-modal {
+  max-width: 400px;
+}
+
+.delete-modal .modal-content {
+  padding: 0 24px 24px;
+  text-align: center;
+}
+
+.warning-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.delete-modal p {
+  margin-bottom: 12px;
+  color: var(--text-primary);
+  line-height: 1.5;
+}
+
+.warning-text {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.delete-modal .modal-actions {
+  padding: 0 24px 24px;
+  border-top: 1px solid var(--border-color);
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .delete-modal {
+    width: 90%;
+  }
+  
+  .delete-modal .modal-content {
+    padding: 0 16px 16px;
+  }
+  
+  .delete-modal .modal-actions {
+    padding: 0 16px 16px;
+    flex-direction: column-reverse;
+    gap: 8px;
+  }
+  
+  .delete-modal .modal-actions .btn {
+    width: 100%;
+  }
+}
