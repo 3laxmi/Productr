@@ -5,7 +5,6 @@ backend/node_modules/
 
 # Environment variables
 .env*
-!.env.example
 
 # Build outputs
 frontend/build/
