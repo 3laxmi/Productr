@@ -1,9 +1,8 @@
 import React from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Sidebar.css';
 
 const Sidebar = () => {
-  const location = useLocation();
 
   return (
     <div className="sidebar">
