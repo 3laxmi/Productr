@@ -7,7 +7,6 @@ A complete MERN Stack Products Management System with authentication, CRUD opera
  Frontend Live Link: https://productr-jade.vercel.app/login
  Backend API Link: https://backend-e0xn.onrender.com/
 
-(Replace the above links with your deployed URLs)
 
  Features
  Authentication
