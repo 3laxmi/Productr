@@ -1,107 +1,83 @@
-# Products Management System
+Products Management System
 
-A complete MERN stack application for product management with authentication, CRUD operations, and modern UI design.
+A complete MERN Stack Products Management System with authentication, CRUD operations, image upload, and a modern responsive UI.
 
-## Features
+ Live Demo
 
-### Authentication
-- Email/Phone number login with OTP verification
-- JWT-based authentication
-- Secure session management
+ Frontend Live Link: https://productr-jade.vercel.app/login
+ Backend API Link: https://backend-e0xn.onrender.com/
 
-### Product Management
-- Create, read, update, delete products
-- Image upload and management
-- Publish/Unpublish products
-- Product categorization
-- Stock management
-- Price management
+(Replace the above links with your deployed URLs)
 
-## Tech Stack
+ Features
+ Authentication
 
-### Backend
-- Node.js
-- Express.js
-- MongoDB with Mongoose
-- JWT for authentication
-- Multer for file uploads
-- Nodemailer for OTP emails
+Login using Email / Phone Number
 
-### Frontend
-- React.js
-- React Router for navigation
-- Axios for API calls
-- React Hot Toast for notifications
-- CSS3 with custom design system
+OTP-based verification system
 
-## Installation & Setup
+JWT-based authentication
 
-### Prerequisites
-- Node.js (v14 or higher)
-- MongoDB (local or cloud)
-- Git
+Protected routes for secure access
 
-### Backend Setup
+Demo OTP Mode enabled (OTP shown on UI for easy testing)
 
-1. Navigate to backend directory:
-```bash
-cd backend
-```
+ Product Management
 
-2. Install dependencies:
-```bash
-npm install
-```
+Create new products
 
-3. Create `.env` file with the following variables:
-```env
-PORT=5000
-MONGODB_URI=mongodb://localhost:27017/products_db
-JWT_SECRET=your_jwt_secret_key_here
-EMAIL_USER=your_email@gmail.com
-EMAIL_PASS=your_app_password
-```
+View all products in dashboard
 
-4. Start MongoDB service (if using local MongoDB)
+Update product details
 
-5. Start the backend server:
-```bash
-npm run dev
-```
+Delete products with confirmation modal
 
-The backend will run on `http://localhost:5000`
+Upload product images
 
-### Frontend Setup
+Publish / Unpublish product
 
-1. Navigate to frontend directory:
-```bash
-cd frontend
-```
+Stock & Price management
 
-2. Install dependencies:
-```bash
-npm install
-```
+ Tech Stack
+    Backend
+       Node.js
+        Express.js
 
-3. Start the frontend development server:
-```bash
-npm start
-```
+MongoDB (Mongoose)
 
-The frontend will run on `http://localhost:3000`
+JWT Authentication
 
-## Environment Configuration
+Multer (File Uploads)
 
-### Backend (.env)
-- `PORT`: Server port (default: 5000)
-- `MONGODB_URI`: MongoDB connection string
-- `JWT_SECRET`: Secret key for JWT tokens
-- `EMAIL_USER`: Gmail address for sending OTP emails
-- `EMAIL_PASS`: Gmail app password for authentication
+Frontend
 
-## Project Structure
+React.js
 
-```
+React Router DOM
+
+Axios
+
+React Hot Toast
+
+CSS3 (Custom styling)
+
+ Demo OTP Mode (Important)
+
+Since this project is made for assignment/demo purposes, OTP is not sent to email.
+
+OTP is generated and displayed directly on UI (Demo Mode) for testing.
+
+Example:
+
+User enters email/phone
+
+OTP is generated
+
+OTP is displayed on OTP Verification screen
+
+User enters OTP and logs in successfully
+
+ Project Structure
 ├── backend/
 │   ├── models/
 │   │   ├── User.js
@@ -137,7 +113,72 @@ The frontend will run on `http://localhost:3000`
 │   │   └── index.js
 │   └── package.json
 └── README.md
-```
+
+ Installation & Setup
+ Prerequisites
+
+Node.js (v14+ recommended)
+
+MongoDB (Local or MongoDB Atlas)
+
+Git
+
+ Backend Setup
+
+Go to backend folder:
+
+cd backend
 
 
-This project is licensed under the MIT License.
+Install packages:
+
+npm install
+
+
+Create .env file inside backend folder:
+
+PORT=5000
+MONGODB_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret_key
+
+
+Start backend server:
+
+npm start
+
+
+Backend runs on:
+ http://localhost:5000
+
+ Frontend Setup
+
+Go to frontend folder:
+
+cd frontend
+
+
+Install packages:
+
+npm install
+
+
+Start frontend:
+
+npm start
+
+
+Frontend runs on:
+http://localhost:3000
+
+ Deployment
+Frontend Deployment
+
+You can deploy frontend using:
+
+Vercel
+
+Backend Deployment
+
+You can deploy backend using:
+
+Render
