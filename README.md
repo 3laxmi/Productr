@@ -76,43 +76,7 @@ OTP is displayed on OTP Verification screen
 
 User enters OTP and logs in successfully
 
- Project Structure
-├── backend/
-│   ├── models/
-│   │   ├── User.js
-│   │   └── Product.js
-│   ├── routes/
-│   │   ├── auth.js
-│   │   └── products.js
-│   ├── middleware/
-│   │   └── auth.js
-│   ├── uploads/
-│   ├── server.js
-│   └── package.json
-├── frontend/
-│   ├── public/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── Sidebar.js
-│   │   │   ├── Header.js
-│   │   │   ├── ProductCard.js
-│   │   │   ├── ProductModal.js
-│   │   │   └── DeleteConfirmModal.js
-│   │   ├── pages/
-│   │   │   ├── Login.js
-│   │   │   ├── OTPVerification.js
-│   │   │   ├── Dashboard.js
-│   │   │   ├── Home.js
-│   │   │   └── Products.js
-│   │   ├── context/
-│   │   │   └── AuthContext.js
-│   │   ├── utils/
-│   │   │   └── api.js
-│   │   ├── App.js
-│   │   └── index.js
-│   └── package.json
-└── README.md
-
+ 
  Installation & Setup
  Prerequisites
 
