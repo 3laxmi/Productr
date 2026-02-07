@@ -28,15 +28,21 @@ const Login = () => {
 
     try {
       const response = await authAPI.login(emailOrPhone);
-      toast.success('OTP sent successfully!');
-      navigate('/verify-otp', { 
-        state: { 
+
+      const otp = response.data.otp;
+
+      toast.success(`OTP Generated (Demo): ${otp}`);
+
+      navigate('/verify-otp', {
+        state: {
           userId: response.data.userId,
-          emailOrPhone 
-        } 
+          emailOrPhone,
+          demoOtp: otp
+        }
       });
+
     } catch (error) {
-      const message = error.response?.data?.message || 'Failed to send OTP';
+      const message = error.response?.data?.message || 'Failed to generate OTP';
       setError(message);
       toast.error(message);
     } finally {
@@ -57,11 +63,11 @@ const Login = () => {
           </div>
         </div>
       </div>
-      
+
       <div className="login-right">
         <div className="login-form-container">
           <h2>Login to your Product Account</h2>
-          
+
           <form onSubmit={handleSubmit} className="login-form">
             <div className="form-group">
               <label htmlFor="emailOrPhone">Email or Phone number</label>
@@ -80,8 +86,8 @@ const Login = () => {
               {error && <div className="error-text">{error}</div>}
             </div>
 
-            <button 
-              type="submit" 
+            <button
+              type="submit"
               className="btn btn-primary login-btn"
               disabled={loading || !emailOrPhone.trim()}
             >
