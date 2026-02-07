@@ -208,6 +208,11 @@ const transporter = nodemailer.createTransport({
   },
 });
 
+console.log("Brevo user:", process.env.BREVO_USER);
+console.log("Sender email:", process.env.SENDER_EMAIL);
+
+
+
 // Login Route
 router.post("/login", async (req, res) => {
   console.log("Login request received:", req.body);
